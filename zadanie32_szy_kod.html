@@ -1,0 +1,41 @@
+
+<html>
+<body>
+<textarea cols="100" rows="26">
+<html>
+<head>
+    <script type="text/javascript">
+        // Konstruktor obiektu Monitor
+        function monitor(producent, matryca, odswiezanie, cale) { 
+            this.producent = producent;
+            this.matryca = matryca;
+            this.odswiezanie = odswiezanie;
+            this.cale = cale;
+        }
+
+        // Dodanie metody do prototypu (wspólna dla wszystkich monitorów)
+        monitor.prototype.wypisz = function () { 
+            alert(this.producent + ' ' + this.matryca + ' ' + this.odswiezanie + ' ' + this.cale + '"');
+        };
+
+        // Tworzenie konkretnych instancji (obiektów)
+        var mon1 = new monitor("Samsung", "OLED", "240Hz", "27"); 
+        var mon2 = new monitor("LG", "NanoIPS", "144Hz", "34");
+        var mon3 = new monitor("Dell", "IPS", "60Hz", "24");
+
+        document.write("Dostęp do właściwości:<br>");
+        document.write("Monitor pierwszy: " + mon1.producent + ", " + mon1.matryca + ", " + mon1.odswiezanie + ", " + mon1.cale + " cali<br>");
+        document.write("Monitor drugi: " + mon2.producent + ", " + mon2.matryca + ", " + mon2.odswiezanie + ", " + mon2.cale + " cali<br>");
+        document.write("Monitor trzeci: " + mon3.producent + ", " + mon3.matryca + ", " + mon3.odswiezanie + ", " + mon3.cale + " cali<br>");
+
+        // Wywołanie metod dla poszczególnych obiektów
+        mon1.wypisz();
+        mon2.wypisz();
+        mon3.wypisz();
+    </script>
+</head>
+</html>
+</textarea>
+</body>
+</html>
+ 

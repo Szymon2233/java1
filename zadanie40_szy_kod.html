@@ -1,0 +1,40 @@
+
+<html>
+<body>
+<textarea cols="100" rows="26">
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <meta charset="UTF-8">
+    <title>jackiewicz Z40_JS</title>
+<body>
+
+    <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+        var x=prompt("podaj argument x=","");
+        var x_jac=parseFloat(x);
+        document.write("wykonał Kacper jackiewicz <br>");
+        document.write("czytany argument x="+x_jac+"<br>");
+        function f_jac(x_jac) {
+            if(x_jac>=2) {
+                return 9;
+            }
+            if((x_jac>-2)&&(x_jac<0)) {
+                return Math.pow(x_jac+1, 2);
+            }
+            if((x_jac>=0)&&(x_jac<2)) {
+                return Math.pow(x_jac, 3) + 1;
+            }
+            if (x_jac<-2){
+                return 1;
+            }
+        }
+        document.write("f(" + x + ")="+f_jac(x_jac)+"<br>");
+    </script>
+    </div>
+</body>
+</html>
+<!-- jackiewicz Z40_JS -->
+</textarea>
+</body>
+</html>
+ 

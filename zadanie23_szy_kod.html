@@ -1,0 +1,47 @@
+
+<html>
+<body>
+<textarea cols="100" rows="41">
+<html>
+<head>
+    <script language="JavaScript">
+    function drabina_jackiewicz(){
+        var d_szy = parseFloat(document.getElementsByName('d')[0].value);
+        var x_szy = parseFloat(document.getElementsByName('x')[0].value);
+
+        drabina_szy = Math.sqrt(Math.pow(d_szy, 2) + Math.pow(x_szy, 2));
+
+        alert("Drabina = " + drabina_szy.toFixed(2) + " cm");
+        document.getElementsByName('drabina')[0].value = drabina_szy.toFixed(2);
+    }
+
+    function alfa_jackiewicz(){
+        var d_szy = parseFloat(document.getElementsByName('d')[0].value);
+        var x_szy = parseFloat(document.getElementsByName('x')[0].value);
+
+        var sin_alfa_szy = d_szy/drabina_szy;
+        var alfa_szy = (Math.asin(sin_alfa_szy)) * 180 / Math.PI;
+
+        alert("Alfa = " + alfa_szy.toFixed(2));
+        document.getElementsByName('alfa')[0].value = alfa_szy.toFixed(2);
+    }
+    </script>
+</head>
+<body>
+    <form name="formularz" onsubmit="drabina_jackiewicz(); alfa_jackiewicz(); return false">
+            Podaj d=
+        <input size="6" name="d" id="input_d">
+            Podaj x=
+        <input size="6" name="x" id="input_x"><br><br>
+        <input TYPE="submit" Value="oblicz"><br><br>
+            Drabina=
+        <input size="6" name="drabina"><br>
+            Alfa=
+        <input size="6" name="alfa">
+    </form>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

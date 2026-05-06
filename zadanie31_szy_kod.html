@@ -1,0 +1,52 @@
+
+<html>
+<body>
+<textarea cols="100" rows="26">
+<html>
+<head>
+    <script type="text/javascript">
+        var Monitor = {
+            producent: 'Dell',
+            matryca: 'IPS',
+            proporcje: '16:9',
+            monitor_pokaz_jackiewicz: function (){
+                document.write(
+                    "Producent: " + this.producent + "<br>" +
+                    "Matryca: " + this.matryca + "<br>" +
+                    "Proporcje: " + this.proporcje
+                );
+            }
+        }
+
+        // Wywołanie pierwszej metody
+        Monitor.monitor_pokaz_jackiewicz();
+
+        // Dynamiczne dodanie pola (właściwości)
+        Monitor.cale = 27;
+
+        // Dynamiczne dodanie nowej metody
+        Monitor.wypisz = function() {
+            alert('Przekątna ekranu: ' + this.cale + ' cali');
+        }
+
+        // Wywołanie nowej metody
+        Monitor.wypisz();
+    </script>
+</head>
+<body>
+    <br>
+    Programowanie obiektowe. <br>
+    Obiekt to monitor<br>
+    Pola:<br>
+    producent<br>
+    matryca<br>
+    proporcje<br>
+    metoda: monitor_pokaz_jackiewicz<br>
+    nowe pole to cale<br>
+    nowa metoda to wypisz();<br>
+</body>
+</html>
+</textarea>
+</body>
+</html>
+ 

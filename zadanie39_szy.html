@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>jackiewicz Z39_JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<html>
+<body>
+    <b><font color="green" size="7">MENU</font><br><br><br><br>
+    <font color="red" size="6">1-CZERWONY</font><br><br>
+    <font color="blue" size="6">2-NIEBIESKI</font><br><br></b>
+
+
+    <input type="button" name="jackiewicz" value="Oblicz" onclick="fun_jac()" />
+    <script>
+        function fun_jac() {
+            var x_jac = prompt("Podaj kolor", "");
+            if(x_jac == 1 || x_jac.toLowerCase() == "czerwony") {
+                document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br/>');
+            }
+            else if(x_jac == 2 || x_jac.toLowerCase() == "niebieski") {
+                document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br/>');
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- jackiewicz Z39_JS -->

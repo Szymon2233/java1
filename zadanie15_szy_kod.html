@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style="color:green;font-size:50px;">
+        <script language="JavaScript">
+            var a_szy=prompt("A=","");
+            var b_szy=prompt("B=","");
+            var a = parseFloat(a_szy);
+            var b = parseFloat(b_szy);
+            var wynik1_szy = a*a*a;
+            var wynik2_szy = 3*(a*a*b);
+            var wynik3_szy = 3*(a*b*b);
+            var wynik4_szy = b*b*b;
+            var wynik_szy = wynik1_szy + wynik2_szy + wynik3_szy + wynik4_szy;
+            document.write("(" + a + " + " + b + ")³ = " + a + "³ + 3*" + a + "²*" + b + " + 3*" + a + "*" + b + "² + " + b + "³ = " + wynik1_szy + " + " + wynik2_szy + " + " + wynik3_szy + " + " + wynik4_szy + " = " + wynik_szy);
+
+            function okno_zamknij_jackiewicz(){
+                window.close();
+            }
+        </script>
+    </div>
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_jackiewicz()"/>
+</body>
+</html>

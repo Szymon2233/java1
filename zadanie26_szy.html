@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jackiewicz 3G</title>
+    
+    <script>
+        var a = parseFloat(prompt("a=",""));
+        var b = parseFloat(prompt("b=",""));
+        var h = parseFloat(prompt("h=",""));
+
+        function Pow_jackiewicz(a, b, h) {
+            return ((a + b) / 2) * h;
+        }
+
+        function Obw_jackiewicz(a, b, h) {
+            var c = Math.sqrt(Math.pow(Math.abs(b-a)/2, 2) + Math.pow(h, 2));
+            return a + b + 2 * c;
+        }
+
+        var pole_szy = Pow_jackiewicz(a, b, h);
+        var obw_szy = Obw_jackiewicz(a, b, h);
+        document.write("pole=" + pole_szy.toFixed(2) + "<br>");
+        document.write("obw=" + obw_szy.toFixed(2) + "<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
+<!-- Szymon jackiewicz 3G-->
